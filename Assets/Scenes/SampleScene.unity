@@ -793,7 +793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: LightBender.CueTheLight::LightBender.CueTheLight.CueTrainer
   environment: {fileID: 1162654577}
-  episodesPerRun: 1000
+  episodesPerRun: 9999
   maxStepsPerEpisode: 50
   _trainingComplete: 0
   showDebug: 1

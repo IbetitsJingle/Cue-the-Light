@@ -317,8 +317,7 @@ namespace LightBender.CueTheLight
         {
             if (!showDebug) return;
 
-            const int w = 360;
-            GUILayout.BeginArea(new Rect(10, 10, w, 360), GUI.skin.box);
+            GUILayout.BeginArea(new Rect(Screen.width - 380, Screen.height - 350, 370, 340), GUI.skin.box);
             GUILayout.Label("<b>Cue Trainer</b>");
 
             if (isTraining)
