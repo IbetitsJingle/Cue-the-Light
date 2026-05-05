@@ -56,20 +56,20 @@ namespace LightBender.Visuals
             switch (signal.visualPalette)
             {
                 case "golden":
-                    targetColor = new Color(1.0f, 0.85f, 0.5f);
+                    targetColor = new Color(0.95f, 0.85f, 0.4f);
                     targetIntensity = 1.2f;
                     break;
                 case "blue-teal":
-                    targetColor = new Color(0.4f, 0.65f, 0.85f);
-                    targetIntensity = 0.9f;
+                    targetColor = new Color(0.3f, 0.55f, 0.85f);
+                    targetIntensity = 0.8f;
                     break;
                 case "dark-muted":
-                    targetColor = new Color(0.15f, 0.12f, 0.18f);
-                    targetIntensity = 0.4f;
+                    targetColor = new Color(0.45f, 0.15f, 0.2f);
+                    targetIntensity = 0.5f;
                     break;
                 default:
                     Debug.LogWarning($"[VisualController] Unknown palette '{signal.visualPalette}'. Defaulting to golden.");
-                    targetColor = new Color(1.0f, 0.85f, 0.5f);
+                    targetColor = new Color(0.95f, 0.85f, 0.4f);
                     targetIntensity = 1.2f;
                     break;
             }

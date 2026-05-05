@@ -107,12 +107,31 @@ namespace LightBender.Mind
                     reg = Register.Grounded;
                 }
 
+                // Small models inconsistently map register to palette; enforce deterministic mapping here.
+                string musicCluster;
+                string visualPalette;
+                switch (reg)
+                {
+                    case Register.Searching:
+                        musicCluster  = "cool-structured";
+                        visualPalette = "blue-teal";
+                        break;
+                    case Register.Overwhelmed:
+                        musicCluster  = "minimal-sparse";
+                        visualPalette = "dark-muted";
+                        break;
+                    default: // Grounded
+                        musicCluster  = "warm-ambient";
+                        visualPalette = "golden";
+                        break;
+                }
+
                 return new ControlSignal
                 {
                     register        = reg,
                     intensity       = Mathf.Clamp01(dto.intensity),
-                    musicCluster    = string.IsNullOrEmpty(dto.musicCluster)  ? "warm-ambient" : dto.musicCluster,
-                    visualPalette   = string.IsNullOrEmpty(dto.visualPalette) ? "golden"       : dto.visualPalette,
+                    musicCluster    = musicCluster,
+                    visualPalette   = visualPalette,
                     transitionSpeed = Mathf.Clamp01(dto.transitionSpeed),
                     timestamp       = Time.timeAsDouble
                 };
