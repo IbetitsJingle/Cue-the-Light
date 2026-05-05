@@ -1,0 +1,17 @@
+{
+    "name": "LightBender.CueTheLight",
+    "rootNamespace": "LightBender.CueTheLight",
+    "references": [
+        "LightBender.Mind",
+        "LightBender.Visuals"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
