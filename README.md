@@ -89,3 +89,7 @@ Active development. Currently implementing and comparing convergence rates acros
 ## Author
 
 **Jinge Zhou** — Johns Hopkins University, M.S. in Information Systems and AI for Business
+
+## License
+
+Apache License 2.0
