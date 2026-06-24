@@ -1,5 +1,4 @@
 # Cue-the-Light
-# Cue the Light
 
 **Reinforcement Learning for Adaptive Response Selection**
 
